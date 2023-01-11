@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.myfoodapp.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+
+
+    <fragment
+        android:id="@+id/nav_favourite"
+        android:name="com.example.myfoodapp.ui.favourite.OffersFragment"
+        android:label="Offers"
+        tools:layout="@layout/fragment_favourite" />
+    <fragment
+        android:id="@+id/av_my_cart"
+        android:name="com.example.myfoodapp.ui.MyCartFragment"
+        android:label="@string/my_cart"
+        tools:layout="@layout/fragment_my_cart" />
+    <fragment
+        android:id="@+id/nav_my_profile"
+        android:name="com.example.myfoodapp.ProfileFragment"
+        android:label="Profile"
+        tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/nav_pick_up"
+        android:name="com.example.myfoodapp.Pick_up_Point_Fragment"
+        android:label="Pick-up point"
+        tools:layout="@layout/fragment_pick_up__point_" />
+</navigation>
